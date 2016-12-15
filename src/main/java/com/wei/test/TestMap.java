@@ -23,8 +23,6 @@ public class TestMap {
 
         //线程二
         Thread t2 = new Thread() {
-
-
             public void run() {
                 for (int j = 500; j < 1000; j++) {
                     firstHashMap.put(String.valueOf(j), String.valueOf(j));
