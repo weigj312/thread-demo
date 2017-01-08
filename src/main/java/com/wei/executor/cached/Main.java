@@ -1,4 +1,4 @@
-package com.wei.executor;
+package com.wei.executor.cached;
 
 /**
  * Created by weiguangjian on 2016/12/26.

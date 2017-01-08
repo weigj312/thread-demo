@@ -1,4 +1,4 @@
-package com.wei.executor;
+package com.wei.executor.fixed;
 
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
@@ -16,7 +16,7 @@ public class Task implements Runnable {
     }
 
     public void run() {
-        System.out.printf("%s: Task %s: created on: %s\n",Thread.currentThread().getName(),name,new Date()+"");
+        System.out.printf("%s: Task %s: created on: %s\n",Thread.currentThread().getName(),name,initDate+"");
         System.out.printf("%s: Task %s: started on: %s\n",Thread.currentThread().getName(),name,new Date()+"");
         long duration = (long)(Math.random()*10);
         System.out.printf("%s: Task %s: doing a task during %d seconds\n",Thread.currentThread().getName(),name,duration);
