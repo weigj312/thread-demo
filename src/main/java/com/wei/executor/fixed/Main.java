@@ -34,6 +34,7 @@ public class Main {
                         System.out.println("线程执行结束");
                         break;
                     }else{
+                        System.out.println("ExecutorMonitor-----------corePool task accounts:"+executor.getCorePoolSize());
                         System.out.println("ExecutorMonitor-----------active task accounts:"+executor.getActiveCount());
                         System.out.println("ExecutorMonitor-----------completedTaskCount:"+executor.getCompletedTaskCount());
                     }

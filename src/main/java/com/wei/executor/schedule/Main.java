@@ -18,7 +18,7 @@ public class Main {
             Task task = new Task("task "+i);
             executor.schedule(task,i+1, TimeUnit.SECONDS);
         }
-
+        //executor.setExecuteExistingDelayedTasksAfterShutdownPolicy(false);
         executor.shutdown();
 
         try {
